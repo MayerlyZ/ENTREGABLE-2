@@ -1,0 +1,152 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #d2fddf, #f0ffe0);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./asssets/img/2713640.jpg); /* Cambia a tu ilustración vegetal */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  animation: backgroundMove 20s linear infinite;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.6 );
+  border-radius: 30% 10%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  padding: 60px;
+  width: 400px;
+  animation: fadeSlideIn 1s ease-out;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #310052;
+}
+
+h2 span {
+  font-weight: 300;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.85em;
+  color: #310052;
+}
+form{
+  text-align: centers;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px; 
+  border: 1px solid #ccc;
+  outline: none;
+}
+input:hover{
+  border: 1px solid #310052;
+  
+}
+.options {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.options a {
+  color: #310052;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.login-btn {
+  display: block;
+  cursor: pointer;
+  animation: palpitar 5s infinite;
+  margin: 20px;
+  background: none;
+  border: none;
+  text-align: center;
+ 
+
+}
+.login-btn img{
+  width: 50%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+  
+}
+.login-btn:hover {
+  transform: scale(1.03);
+}
+
+.social-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.social-login .icons i {
+  margin: 0 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  color:#310052;
+  transition: color 0.3s;
+
+}
+
+.social-login .icons i:hover {
+  color: #310052;
+}
+.icons{
+    margin-top: 10px;
+    gap: 30px;
+
+}
+/* Animaciones */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes backgroundMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/*@keyframes palpitar{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(0.8);
+  }
+  100%{
+    transform: scale(1);
+  }
+}*/
+
