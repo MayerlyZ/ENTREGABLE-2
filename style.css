@@ -11,7 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(./asssets/img/2713640.jpg); /* Cambia a tu ilustración vegetal */
+  background-image: url(./asssets/img/2713640.jpg); 
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
